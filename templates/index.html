@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Price Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Property Price Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="property_type">Property Type</label>
+                <input type="text" class="form-control" id="property_type" name="property_type" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="province_name">Province Name</label>
+                <input type="text" class="form-control" id="province_name" name="province_name" required>
+            </div>
+            <div class="form-group">
+                <label for="baths">Baths</label>
+                <input type="number" class="form-control" id="baths" name="baths" required>
+            </div>
+            <div class="form-group">
+                <label for="area">Area (sqft)</label>
+                <input type="number" class="form-control" id="area" name="area" required>
+            </div>
+            <div class="form-group">
+                <label for="purpose">Purpose</label>
+                <input type="text" class="form-control" id="purpose" name="purpose" required>
+            </div>
+            <div class="form-group">
+                <label for="bedrooms">Bedrooms</label>
+                <input type="number" class="form-control" id="bedrooms" name="bedrooms" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict Price</button>
+        </form>
+    </div>
+</body>
+</html>
