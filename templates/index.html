@@ -12,7 +12,10 @@
         <form action="/predict" method="post">
             <div class="form-group">
                 <label for="property_type">Property Type</label>
-                <input type="text" class="form-control" id="property_type" name="property_type" required>
+                <select class="form-control" id="property_type" name="property_type" required>
+                    <option value="House">House</option>
+                    <option value="Flat">Flat</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="location">Location</label>
@@ -20,11 +23,21 @@
             </div>
             <div class="form-group">
                 <label for="city">City</label>
-                <input type="text" class="form-control" id="city" name="city" required>
+                <select class="form-control" id="city" name="city" required>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Faisalabad">Faisalabad</option>
+                    <option value="Rawalpindi">Rawalpindi</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="province_name">Province Name</label>
-                <input type="text" class="form-control" id="province_name" name="province_name" required>
+                <select class="form-control" id="province_name" name="province_name" required>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Sindh">Sindh</option>
+                    <option value="Islamabad Capital">Islamabad Capital</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="baths">Baths</label>
@@ -36,7 +49,10 @@
             </div>
             <div class="form-group">
                 <label for="purpose">Purpose</label>
-                <input type="text" class="form-control" id="purpose" name="purpose" required>
+                <select class="form-control" id="purpose" name="purpose" required>
+                    <option value="For Sale">For Sale</option>
+                    <option value="For Rent">For Rent</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="bedrooms">Bedrooms</label>
